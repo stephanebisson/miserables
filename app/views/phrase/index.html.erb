@@ -1,0 +1,8 @@
+<h1>title</h1>
+<div ng-app="phraser" ng-controller="PhraseBuilder">
+	<p>{{words.join(' ')}}</p>
+	<p>
+		<span class="word-choice" 
+					ng-repeat="word in nextWords" ng-click="selectWord(word)">{{$index}}. {{word}}</span>
+	</p>
+</div>
